@@ -1,0 +1,66 @@
+body{
+  margin:0;
+  background: #000;
+  text-align: center;
+  font-family: sans-serif,Arial;
+  color: #fff;
+}
+
+img {
+  height: 50%;
+}
+
+.github-logo{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+
+  height: 30px;
+
+  border: 2.5px solid white;
+  border-radius:51%;
+}
+
+.github-logo:hover{
+  transform:scale(1.1);
+  transition-duration: 0.5s;
+  transition-property: transform;
+}
+
+.rock, .paper, .scissors{
+  background: black ;
+  border: 0px solid white;
+  border-radius:70px;
+  height: 140px;
+  width:140px;
+  margin:20px;
+  cursor: pointer;
+  box-shadow: 0 0 10px 2px rgba(220, 220, 220, 0.572);
+}
+.rock:hover,.paper:hover, .scissors:hover{
+  transition:0.14s;
+  box-shadow: 0 0 5px 1px rgba(220, 220, 220, 0.572);
+  height: 130px;
+  width: 130px;
+  margin:20px 25px;
+  border-radius:75px;
+}
+.result{
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom:10px;
+}
+.reset-button  {
+    background: red;
+    color: white;
+    border: 1px solid white;
+    border-radius:20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.reset-button:hover{
+  box-shadow: 0 0 5px 1px rgba(220, 220, 220, 0.572);
+  background-color:rgba(252, 36, 36, 0.99) ;
+}
