@@ -2,16 +2,17 @@ let score = {};
 retreiveScore();
 
 function retreiveScore() {
-  const storage = JSON.parse(localStorage.getItem("score"));
-  console.log(storage);
-  if (typeof storage === undefined) {
+  const savedScore = JSON.parse(localStorage.getItem("score"));
+  console.log(savedScore);
+  if (savedScore===null) {
     score = {
       Win: 0,
       Lose: 0,
       Ties: 0,
     };
+    
   } else {
-    score = storage;
+    score=savedScore;
   }
   updateScore();
 }
@@ -92,6 +93,7 @@ function resetScore() {
   score.Win = 0;
   score.Lose = 0;
   score.Ties = 0;
+  
   updateScore();
   saveScore();
 
