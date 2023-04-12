@@ -21,27 +21,38 @@
       /></a>
     </div>
 
-    <button class="js-rock rock" onclick="playGame('Rock')" title="Rock">
-      <img src="images/rock-emoji.png" alt="" srcset="" />
+    <button 
+      class="js-rock rock"                      //Rock-button
+      onclick="playGame('Rock')"
+      title="Rock"
+    >
+      <img src="images/rock-emoji.png"/>
     </button>
 
-    <button class="js-paper paper" onclick="playGame('Paper')" title="Paper">
-      <img src="images/paper-emoji.png" alt="" srcset="" />
+    <button                                      //Paper-button
+      class="js-paper paper" 
+      onclick="playGame('Paper')" 
+      title="Paper"
+    >
+    <img src="images/paper-emoji.png" />
     </button>
 
-    <button
+    <button                                       //Scissors-button
       class="js-scissors scissors"
       onclick="playGame('Scissors')"
       title="Scissors"
     >
-      <img src="images/scissors-emoji.png" alt="" srcset="" />
+      <img src="images/scissors-emoji.png"/>
     </button>
 
     <p class="js-result result">Start Playing</p>
     <p class="js-moves moves"></p>
     <p class="js-score score"></p>
 
-    <button class="js-reset-button reset-button" onclick="resetScore()">
+    <button 
+      class="js-reset-button reset-button" 
+      onclick="resetScore()"
+    >
       Reset Score
     </button>
     

@@ -28,29 +28,29 @@ function playGame(playerMove) {
   const result = document.querySelector(".js-result");
   let resultvariable = "";
 
-  if (computerMove === "Rock") {
-    if (playerMove === "Rock") {
+  if (playerMove === "Rock") {        //rock move
+    if (computerMove === "Rock") {
       resultvariable = "Tie";
-    } else if (playerMove === "Scissor") {
-      resultvariable = "Lost";
-    } else {
+    } else if (computerMove === "Scissor") {
       resultvariable = "Won";
+    } else {
+      resultvariable = "Lost";
     }
-  } else if (computerMove === "Paper") {
-    if (playerMove === "Rock") {
-      resultvariable = "Lost";
-    } else if (playerMove === "Scissor") {
+  } else if (playerMove === "Paper") {          //papermove
+    if (computerMove === "Rock") {
       resultvariable = "Won";
+    } else if (computerMove === "Scissor") {
+      resultvariable = "Lost";
     } else {
       resultvariable = "Tie";
     }
-  } else {
-    if (playerMove === "Rock") {
-      resultvariable = "Won";
-    } else if (playerMove === "Scissor") {
+  } else {                                        //scissors move
+    if (computerMove === "Rock") {
+      resultvariable = "Lost";
+    } else if (computerMove === "Scissor") {
       resultvariable = "Tie";
     } else {
-      resultvariable = "Lost";
+      resultvariable = "Won";
     }
   }
   updateResult(resultvariable);
